@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,800;1,900&display=swap');
+
+
+@theme {
+  --color-p5-rojo: #e60012;
+  --color-p5-black: #0d0d0d;
+  --color-p5-yellow: #ffe600;
+  --font-ps: 'Bebas Neue', cursive, sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-p5-black);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* BARRA DE SCROLL ESTILO PERSONA 5 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: 2px solid #222222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e60012;
+  border: 1px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe600;
+}
+
+/* Soporte para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
